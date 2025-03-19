@@ -11,9 +11,9 @@ agregarAmigo.addEventListener('click', () => {
     const nombre = nombreInput.value.trim();
     if (nombre && nombres.length < maxNombres) {
         nombres.push(nombre);
-        nombreInput.value = ''; // Limpia el input
+        nombreInput.value = ''; 
         if (nombres.length === maxNombres) {
-            agregarBoton.disabled = true; // Deshabilita el botón al llegar al máximo
+            agregarBoton.disabled = true; 
         }
     } else if (nombres.length >= maxNombres) {
         alert('Ya has ingresado 5 nombres.');
